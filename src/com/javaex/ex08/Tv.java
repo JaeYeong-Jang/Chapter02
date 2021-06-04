@@ -16,7 +16,7 @@ public class Tv {
 		this(7,20,false);
 	}
 	
-	public  Tv(int volume, int channel, boolean power) {
+	public Tv(int volume, int channel, boolean power) {
 		this.volume = volume;
 		this.channel = channel;
 		this.power = power;

@@ -4,7 +4,11 @@ public class TvApp {
 
 	public static void main(String[] args) {
 
+		Tv tv01 = new Tv();
+		
 		Tv tv = new Tv(7, 20, false);
+
+		tv01.status();
 		
 		tv.status();
 		
