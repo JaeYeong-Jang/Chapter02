@@ -3,13 +3,12 @@ package com.javaex.ex11;
 public class MyMath {
 
 	// 필드
-	
+	private static double pi = 3.14;
 	
 	// 생성자
 	// 생성자를 안만들면 default 생성자를 쓰겠다는 의미.
 	
 	// 메서드 게터세터
-	
 	
 	// 메서드 일반
 	public static int plus(int a, int b){
@@ -30,6 +29,11 @@ public class MyMath {
 	
 	public static double plus(int a, double b) {
 		double result = a+b;
+		return result;
+	}
+	
+	public static double circleArea(int radius) {
+		double result = radius * radius * pi;
 		return result;
 	}
 	

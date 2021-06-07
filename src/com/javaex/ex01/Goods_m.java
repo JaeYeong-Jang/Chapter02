@@ -2,6 +2,13 @@ package com.javaex.ex01;
 
 public class Goods_m {
 
+	//필드
+	
+	//생성자
+	
+	//메소드 게터세터
+	
+	//메소드 일반
 	public static void main(String[]args) {
 	
 		Goods camera = new Goods();
@@ -29,5 +36,5 @@ public class Goods_m {
 		
 		System.out.println(cup.name + ',' + cup.price);
 	}
-	
+
 }
