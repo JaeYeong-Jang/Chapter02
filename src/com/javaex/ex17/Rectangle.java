@@ -9,7 +9,7 @@ public class Rectangle extends Shape{
 	//constructors
 	public Rectangle() {
 		//super(); --> 부모 클래스에 Shape()생성자가 없으면 오류
-		System.out.println("Rectangle()");
+		
 	}
 	
 	public Rectangle(String fillColor, String lineColor, int width, int height) {
@@ -20,7 +20,7 @@ public class Rectangle extends Shape{
 		super(fillColor,lineColor);
 		this.width = width;
 		this.height = height;
-		System.out.println("Rectangle(4)");
+		
 	}
 	//method g/s
 	public int getWidth() {

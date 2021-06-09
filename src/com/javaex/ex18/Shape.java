@@ -1,4 +1,4 @@
-package com.javaex.ex17;
+package com.javaex.ex18;
 
 public class Shape {
 
@@ -45,6 +45,10 @@ public class Shape {
 	public void draw() {
 		System.out.println("[면색 : " + this.fillColor +
 				", 선색 : " + this.lineColor + "] 도형을 그렸습니다.");
+	}
+	
+	public double area() {
+		return 0.0;
 	}
 	
 }

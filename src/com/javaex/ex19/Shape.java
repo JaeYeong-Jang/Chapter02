@@ -1,6 +1,6 @@
-package com.javaex.ex17;
+package com.javaex.ex19;
 
-public class Shape {
+public abstract class Shape {
 
 	//fields
 	protected String fillColor;
@@ -46,5 +46,7 @@ public class Shape {
 		System.out.println("[면색 : " + this.fillColor +
 				", 선색 : " + this.lineColor + "] 도형을 그렸습니다.");
 	}
+	
+	public abstract double area();
 	
 }

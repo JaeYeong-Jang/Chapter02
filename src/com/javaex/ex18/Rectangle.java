@@ -1,22 +1,23 @@
-package com.javaex.ex17;
+package com.javaex.ex18;
 
-public class Triangle extends Shape {
+public class Rectangle extends Shape{
 
 	//fields
 	private int width;
 	private int height;
 	
 	//constructors
-	public Triangle() {
+	public Rectangle() {
 		//super(); --> 부모 클래스에 Shape()생성자가 없으면 오류
 		
 	}
 	
-	public Triangle(String fillColor, String lineColor, int width, int height) {
+	public Rectangle(String fillColor, String lineColor, int width, int height) {
 		//super(); --> 부모 클래스에 Shape()생성자가 없으면 오류
+		//Super(String fillColor, String lineColor); --> setColor 해주지 않고 이렇게 해도 작동
 		//super.setFillColor(fillColor);
 		//super.setLineColor(lineColor);
-		super(fillColor, lineColor);
+		super(fillColor,lineColor);
 		this.width = width;
 		this.height = height;
 		
@@ -46,7 +47,11 @@ public class Triangle extends Shape {
 	}
 	
 	public void draw() {
-		System.out.println("[면 색 : " + fillColor + ", 선 색 : " + lineColor + ", 너비 : " + this.width + ", 높이 : " + this.height + "] 도형을 그렸습니다.");
+		System.out.println("[면 색 : " + fillColor + ", 선 색 : " + lineColor + ", 너비 : " + this.width + ", 높이 : " + this.height + "] 사각형을 만들었습니다.");
+	}
+	
+	public double area() {
+		return width*height;
 	}
 	
 }

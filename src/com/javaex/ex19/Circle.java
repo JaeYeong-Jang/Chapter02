@@ -1,4 +1,4 @@
-package com.javaex.ex17;
+package com.javaex.ex19;
 
 public class Circle extends Shape {
 
@@ -37,7 +37,11 @@ public class Circle extends Shape {
 	}
 	
 	public void draw() {
-		System.out.println("[면 색 : " + fillColor + "선 색 : " + lineColor + ", 반지름 : " + this.radius + "] 도형을 그렸습니다.");
+		System.out.println("[면 색 : " + fillColor + "선 색 : " + lineColor + ", 반지름 : " + this.radius + "] 원을 그렸습니다.");
+	}
+	
+	public double area() {
+		return radius*radius*3.14;
 	}
 	
 }
